@@ -19,10 +19,10 @@ while True:
     # Press A/B to control motor 1
     if explorer.is_pressed(explorer.BUTTON_A):
         explorer.set_motor(0, 0, 1)
-        explorer.text("Motor 1 Forwards", 0, 100, width, 2)
+        explorer.text("Motor 1 Forwards", 0, 100, WIDTH, 2)
     elif explorer.is_pressed(explorer.BUTTON_B):
         explorer.set_motor(0, 1, 1)
-        explorer.text("Motor 1 Backwards", 0, 100, width, 2)
+        explorer.text("Motor 1 Backwards", 0, 100, WIDTH, 2)
     else:
         explorer.set_motor(0, 0, 0)
     
@@ -30,10 +30,10 @@ while True:
     # Press X/Y to control motor 2
     if explorer.is_pressed(explorer.BUTTON_X):
         explorer.set_motor(1, 0, 1)
-        explorer.text("Motor 2 Forwards", 0, 150, width, 2)
+        explorer.text("Motor 2 Forwards", 0, 150, WIDTH, 2)
     elif explorer.is_pressed(explorer.BUTTON_Y):
         explorer.set_motor(1, 1, 1)
-        explorer.text("Motor 2 Backwards", 0, 150, width, 2)
+        explorer.text("Motor 2 Backwards", 0, 150, WIDTH, 2)
     else:
          explorer.set_motor(1, 0, 0)
     
